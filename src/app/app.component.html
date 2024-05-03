@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Add a input field which update a property</li>
+        <li>output the username property via string </li>
+        <li>Add a button </li>
+      
+      </ol>
+      <hr>
+      <label>Username</label>
+      <input type="text" class="form-contol"[(ngModel)]="username">
+      <p>{{username}}</p>
+      <button 
+      class="btn btn-primary mt-3"
+       [disabled]="username ===''"
+       (click)="username =''">Reset user</button>
+    </div>
+  </div>
+</div>
